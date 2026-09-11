@@ -64,6 +64,13 @@ Use the `.update` method to update the props of an overlay.
 
 <ExampleTabs name="overlay-with-update" />
 
+### Check Whether an Overlay Exists
+
+Use the `.has` method before opening an overlay to prevent creating another
+overlay with the same id.
+
+<ExampleTabs name="overlay-with-has-check" />
+
 ### Return Value
 
 Awaiting the result of the `.open()` method returns the value passed to the
@@ -153,6 +160,10 @@ Removes all overlays.
 ### `get(id)`
 
 Gets the props of the overlay with the given id.
+
+### `has(id)`
+
+Returns whether an overlay with the given id exists.
 
 ### `getSnapshot()`
 
