@@ -49,6 +49,14 @@ experience when entering OTP codes
 
 <ExampleTabs name="pin-input-with-otp" />
 
+### Mobile Keyboard
+
+Pin Input automatically sets `enterKeyHint="next"` on intermediate inputs and
+`enterKeyHint="done"` on the last input. Supported mobile keyboards use these
+hints to display the appropriate action key.
+
+<ExampleTabs name="pin-input-with-enter-key-hint" />
+
 ### Mask
 
 Pass the `mask` prop to the `PinInput.Root` component to obscure the entered pin
