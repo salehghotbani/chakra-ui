@@ -103,6 +103,13 @@ Upload multiple files at once by using the `maxFiles` prop.
 
 <ExampleTabs name="file-upload-multiple" />
 
+### Duplicate Files
+
+Selecting the same file more than once rejects the duplicate with the
+`FILE_EXISTS` error. Use `onFileReject` to display feedback for rejected files.
+
+<ExampleTabs name="file-upload-duplicate-rejection" />
+
 ### Custom Preview
 
 Here's an example of how to show a custom image preview for files.
